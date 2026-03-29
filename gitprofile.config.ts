@@ -1,139 +1,115 @@
-
-
+// gitprofile.config.ts
 const CONFIG = {
   github: {
-    username: 'Yahir5l', // Your GitHub org/user name. (This is the only required config)
+    username: 'Yahir5l', // <--- ¡CAMBIA ESTO POR TU USUARIO DE GITHUB!
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
+  base: '/', 
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: true,
+      header: 'Proyectos de GitHub',
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'stars',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
-      },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Mis Proyectos y Diseños',
       projects: [
         {
-          title: 'Project Name',
+          title: 'Sistema de Gestión de Inventario',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Desarrollado en Java con Maven. Incluye lógica de negocio, manejo de persistencia y pruebas unitarias (JUnit) para asegurar la integridad de los datos.',
+          imageUrl: 'https://img.freepik.com/free-vector/software-tester-checking-system-quality_23-2148501181.jpg',
+          link: 'https://github.com/TU-USUARIO-AQUI', // Pon el link a tu repo de Java
         },
         {
-          title: 'Project Name',
+          title: 'Diseño UI/UX en Figma',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Prototipos interactivos y diseño de interfaces modernos. Enfoque en la experiencia de usuario y sistemas de componentes.',
+          imageUrl: 'https://cdn.worldvectorlogo.com/logos/figma-1.svg',
+          link: 'PEGA-AQUI-TU-LINK-DE-FIGMA',
+        },
+        {
+          title: 'Live Coding Music - Strudel',
+          description:
+            'Creación de ritmos Techno y Deep House mediante algoritmos en JavaScript. Exploración de la programación aplicada al arte sonoro.',
+          imageUrl: 'https://strudel.cc/logo.png',
+          link: 'https://strudel.cc/',
         },
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: {
+    title: 'Portafolio Profesional',
+    description: 'Estudiante de Ingeniería y Desarrollador Java',
+  },
   social: {
+    facebook: 'https://www.facebook.com/alberto.renterialuna.1/?locale=es_LA',
     instagram: 'https://www.instagram.com/yahir_5l/',
-    website: 'https://www.yahirfantastic.com',
-    phone: '6331255239',
-    email: 'renterialunayahir@gmail.com',
+    github: 'Yahir5l',
+    email: 'albertorenteria05052005', 
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Link a tu CV en PDF si lo tienes
   },
   skills: [
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'MySQL',
+    'Java',
+    'Maven',
+    'Unit Testing (JUnit)',
+    'UML Modeling',
+    'Systems Analysis',
+    'Circuit Analysis',
+    'Electrical Engineering',
+    'Data Curation',
     'Git',
     'Docker',
-    'C#',
+    'Figma (UI/UX)',
+    'Strudel (Live Coding)',
   ],
   experiences: [
     {
-      company: 'freelancer',
-      from: 'September 2024',
-      to: 'Present',
+      company: 'Universidad',
+      position: 'Estudiante de Ingeniería',
+      from: '2023',
+      to: 'Presente',
     },
   ],
   certifications: [
     {
-      name: 'data curator',
-      year: 'March 2026',
+      name: 'Certificación en Gestión Web',
+      body: 'Administración y despliegue de plataformas digitales.',
+      year: '2026',
     },
     {
-      name: 'Web Assistant',
-      year: 'March 2026',
+      name: 'Testing y QA Foundation',
+      body: 'Aseguramiento de la calidad de software.',
+      year: '2026',
     },
-
-     {
-      name: 'data curator',
-      year: 'March 2026',
+    {
+      name: 'Curación de Datos',
+      body: 'Organización de activos de información técnica.',
+      year: '2026',
     },
-
-     {
-      name: 'Tester',
-      year: 'March 2026',
-    },
-
-
-
-    
   ],
   educations: [
     {
-      institution: 'Universidad de Sonora',
-      degree: 'information systems engineer',
-      from: '204',
-      to: 'Present',
+      institution: 'Univerisdad de Sonora',
+      degree: 'Ingeniería en Sistemas / Eléctrica',
+      from: '2023',
+      to: 'Presente',
     },
-    
   ],
-
-  // Display articles from your medium or dev account. (Optional)
-  
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
+    defaultTheme: 'nord', 
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
       'dark',
@@ -167,20 +143,9 @@ const CONFIG = {
       'dim',
       'nord',
       'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
-    ],
+      ],
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
+  footer: `Hecho con <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a>`,
   enablePWA: true,
 };
 
