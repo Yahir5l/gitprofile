@@ -1,7 +1,7 @@
 // gitprofile.config.ts
 const CONFIG = {
   github: {
-    username: 'Yahir5l', // <--- ¡CAMBIA ESTO POR TU USUARIO DE GITHUB!
+    username: 'Yahir5l', 
   },
   base: '/', 
   projects: {
